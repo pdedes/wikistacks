@@ -1,0 +1,14 @@
+{% extends "ramnik.html" %}
+
+{% block title %} Wikistacks: {{title}} {% endblock %}
+
+{% block content %}
+	<h1> {{title}} </h1>
+	<p> {{content|mark_Down}} </p>
+	<br>
+	<p>Tags: {{tags}}</p>
+
+	<!-- avoid spaces in swig -->
+	<!-- all elements will be checked in the filter: instagram, not functional filter-->
+
+{% endblock %}

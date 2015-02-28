@@ -1,0 +1,21 @@
+{% extends "ramnik.html" %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+	<form id="new_page_form" action='/add/submit' method='post'>
+		<div class="form-group">
+		    <label for="add_Page_Title">Page Title</label>
+		    <input type="text" class="form-control" id="add_title" placeholder="Enter Title" name="pageTitle">
+		 </div>
+		 <div class="form-group">
+		    <label for="add_Page_Content">Page Content</label>
+		    <input type="text" class="form-control" id="add_content" placeholder="Enter your page content here..." name="pageControl">
+		 </div>
+		  <div class="form-group">
+		    <label for="add_Page_Tags">Page Content</label>
+		    <input type="text" class="form-control" id="add_tags" placeholder="Enter your tags separated by spaces..." name="pageTags">
+		 </div>
+		 <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+{% endblock %}

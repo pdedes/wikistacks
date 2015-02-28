@@ -1,0 +1,15 @@
+{% extends "ramnik.html" %}
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <ul>
+    {% for page in pages %}
+    	<li> {{page|page_link}}</li>
+    {% endfor %}
+	</ul>
+{% endblock %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
